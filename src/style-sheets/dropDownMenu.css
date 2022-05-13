@@ -1,0 +1,25 @@
+#dropDownMenu{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#dropDownMenu a{
+    display: inline-flex;
+    margin-left: 5rem;
+    text-decoration: none;
+}
+
+.dropDownMenu_item{
+    
+    list-style: none;
+    font-size: 1.6rem;
+    color: white;
+}
+
+@media (min-width: 1200px){
+    #dropDownMenu{
+        display: flex;
+    }
+    
+}

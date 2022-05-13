@@ -1,3 +1,10 @@
+
+:root{
+  --gray: #272B33;
+  --light-black: #0A0C10;
+  --dark-black: #010409;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -10,7 +17,10 @@ html {
   font-size: 62.5%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  width: 100%;
+  min-height: 100vh;
+  user-select: none;
+  margin: 0 auto;
+  max-width: 150rem;
 }

@@ -1,0 +1,47 @@
+header{
+    position: fixed;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    padding: 0 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--gray);
+}
+
+#headerWidth{
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+#homeIcon{
+    display: block;
+    width: 3rem;
+}
+
+#menuIcon{
+    display: block;
+    width: 5rem;
+}
+
+#codews{
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+@media (min-width: 1199px){
+    #homeIcon{
+        display: none;
+    }
+    
+    #menuIcon{
+        display: none;
+    }
+}
+
+@media (min-width: 1200px){
+    header{
+        padding-right: 15rem;
+        padding-left: 15rem;
+    }
+}
