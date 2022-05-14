@@ -8,23 +8,55 @@ main{
 }
 
 #mainImageContainer{
-    width: 100%;
-    height: 44.6rem;
+    min-height: 20rem;
+    max-height: 69.6rem;
     overflow: hidden;
     position: relative;
+    z-index: 9;
+    
 }
 
 #h1Start{
-    position: absolute;
-    top: 30%;
-    left: 10rem;
+    margin: 0 3rem 0 0;
     z-index: 10;
     font-size: 2.8rem;
+    text-align: right;
     color: #fff;
 }
 
 #h1Start span{
     font-size: 2rem;
+    line-height: 7.6rem;
+}
+
+#h1Start_container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
+}
+
+.h1Start_blueDiv{
+    position: absolute;
+    background-color: #37BDD3;
+}
+
+#h1Start_blueDiv1{
+    top: 2.9rem;
+    right: 18rem;
+    width: 0.8rem;
+    height: 1.7rem;
+}
+
+#h1Start_blueDiv2{
+    top: 8rem;
+    right: 1rem;
+    width: 1.3rem;
+    height: 12rem;
+}
+
+.mainImage{
+    filter: brightness(35%);
 }
 
 #mainImage768x446{
@@ -37,8 +69,7 @@ main{
 }
 
 #mainImage1500x870{
-    width: 100%;
-    filter: brightness(55%);
+    width: 100%;    
     display: none;
 }
 
@@ -51,6 +82,10 @@ main{
 
     #mainImage1200x696{
         display: block;
+    }
+
+    #h1Start_container{
+        width: 95%;
     }
 }
 

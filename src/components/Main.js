@@ -8,10 +8,14 @@ function Main() {
     return(
         <main>
             <figure id="mainImageContainer">
-            <h1 id="h1Start"><span>Desarrollo web</span><br/>Páginas web<br/>Sitios web<br/>Landing pages<br/>Aplicaciones web</h1>
-                <img id="mainImage768x446" src={mainImage768x446} alt="imagen desarrolladores en oficina" />
-                <img id="mainImage1200x696" src={mainImage1200x696} alt="imagen desarrolladores en oficina" />
-                <img id="mainImage1500x870" src={mainImage1500x870} alt="imagen desarrolladores en oficina" />
+                <div id="h1Start_container">
+                    <div className="h1Start_blueDiv" id="h1Start_blueDiv1"></div>
+                    <div className="h1Start_blueDiv" id="h1Start_blueDiv2"></div>
+                    <h1 id="h1Start"><span>Desarrollo web</span><br/>Páginas<br/>Sitios<br/>Landing pages<br/>Aplicaciones web</h1>
+                </div>
+                <img className="mainImage" id="mainImage768x446" src={mainImage768x446} alt="imagen desarrolladores en oficina" />
+                <img className="mainImage" id="mainImage1200x696" src={mainImage1200x696} alt="imagen desarrolladores en oficina" />
+                <img className="mainImage" id="mainImage1500x870" src={mainImage1500x870} alt="imagen desarrolladores en oficina" />
             </figure>
             
         </main>
