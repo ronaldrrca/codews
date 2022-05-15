@@ -8,6 +8,7 @@ main{
 }
 
 #mainImageContainer{
+    position: relative;
     min-height: 20rem;
     max-height: 69.6rem;
     overflow: hidden;
@@ -17,15 +18,15 @@ main{
 }
 
 #h1Start{
-    margin: 0 3rem 0 0;
+    margin: 0 3rem 0 2.5rem;
     z-index: 10;
-    font-size: 2.8rem;
-    text-align: right;
+    font-size: 2.2rem;
+    text-align: left;
     color: #fff;
 }
 
 #h1Start span{
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 7.6rem;
 }
 
@@ -38,25 +39,45 @@ main{
 
 .h1Start_blueDiv{
     position: absolute;
-    background-color: #37BDD3;
+    background-color: var(--green);
 }
 
 #h1Start_blueDiv1{
     top: 2.9rem;
-    right: 18rem;
+    left: 16rem;
     width: 0.8rem;
     height: 1.7rem;
 }
 
 #h1Start_blueDiv2{
-    top: 8rem;
-    right: 1rem;
+    top: 7.8rem;
+    left: 0.5rem;
     width: 1.3rem;
-    height: 12rem;
+    height: 10rem;
+}
+
+#first_p_noMobil{
+    display: none;
+    width: 100%;
+    position: absolute;
+    bottom: 3rem;
+    left: 0;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+#first_p_mobil{
+    display: inline-block;
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #000;
 }
 
 .mainImage{
-    filter: brightness(35%);
+    filter: brightness(40%);
 }
 
 #mainImage768x446{
@@ -73,6 +94,56 @@ main{
     display: none;
 }
 
+#noCompite{
+    width: 100%;
+    background-color: var(--light-black);
+    margin-top: 3rem;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+#responsive_proposal_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+#responsiveImg_container{
+    width: 100%;
+    position: relative;
+}
+
+#responsive_design{
+    position: absolute;
+    top: 18rem;
+    left: 0;
+    background-color: var(--green);
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 1rem;
+}
+
+#responsiveImg768, #responsiveImg900{
+    width: 100%;
+}
+
+#responsiveImg900{
+    display: none;
+}
+
+#proposal{
+    padding: 4rem 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    background-color: #3477ff;
+}
+
 
 
 @media (min-width: 768px){
@@ -85,7 +156,29 @@ main{
     }
 
     #h1Start_container{
-        width: 95%;
+        height: 60%;
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+
+    #first_p_noMobil{
+        display: inline-block;
+    }
+
+    #first_p_mobil{
+        display: none;
+    }
+
+    #noCompite{
+        margin-top: 0;
+    }
+
+    #responsiveImg768{
+        display: none;
+    }
+
+    #responsiveImg900{
+        display: block;
     }
 }
 
@@ -97,4 +190,23 @@ main{
     #mainImage1500x870{
         display: block;
     }
-}
+
+    #h1Start_container{
+        margin-top: 5rem;
+        margin-left: 12rem;
+    }
+
+    #responsive_proposal_container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #responsiveImg_container{
+        width: 60%;
+    }
+
+    #proposal{
+        width: 40%;
+    }
+ }
