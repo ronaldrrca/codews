@@ -5,6 +5,13 @@ import mainImage1500x870 from '../images/mainImage-1500x870.webp'
 import responsive768 from '../images/responsive-768p.webp'
 import responsive900 from '../images/responsive-900p.webp'
 import '../style-sheets/main.css'
+import { RecentProject } from '../components/RecentProject'
+import home_business_it_event from '../images/home-business-it-event.webp'
+import home_construction from '../images/home-construction.webp'
+import home_hairdressing_makeup from '../images/home-hairdressing-makeup.webp'
+import home_lawyers_attorneys from '../images/home-lawyers-attorneys.webp'
+import home_photography_studio from '../images/home-photography-studio.webp'
+import home_ristorante from '../images/home-ristorante.webp'
 
 function Main() {
     return(
@@ -31,6 +38,16 @@ function Main() {
                 </figure>
                 <p id="proposal">Solicita una propuesta de desarrollo para tu negocio, sin costo y sin compromisos.</p>
             </div>
+            <h2 className="start_sectionTitle">Proyectos recientes</h2>
+            <section id="recentProjects">
+                <RecentProject src={home_business_it_event} alt='pagina web de evento' projectTitle='EVENTO DE NEGOCIOS'/>
+                <RecentProject src={home_construction} alt='pagina web de construccion' projectTitle='NEGOCIO DE CONSTRUCCIÓN'/>
+                <RecentProject src={home_hairdressing_makeup} alt='pagina web de cuidado para el cabello' projectTitle='CUIDADO DEL CABELLO'/>
+                <RecentProject src={home_lawyers_attorneys} alt='pagina web de abogados' projectTitle='ABOGADOS'/>
+                <RecentProject src={home_photography_studio} alt='pagina web de estudio fotografico' projectTitle='ESTUDIO FOTOGRÁFICO'/>
+                <RecentProject src={home_ristorante} alt='pagina web de restaurante' projectTitle='RESTAURANTE'/>
+            </section>
+            
         </main>
     )
 }
