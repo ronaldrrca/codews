@@ -1,13 +1,6 @@
-main{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 6rem;
-}
 
-#mainImageContainer{
+
+#homeImageContainer{
     position: relative;
     min-height: 20rem;
     max-height: 69.6rem;
@@ -76,20 +69,20 @@ main{
     color: #000;
 }
 
-.mainImage{
+.homeMainImage{
     filter: brightness(40%);
 }
 
-#mainImage768x446{
+#homeMainImage768x446{
     width: 100%;
 }
 
-#mainImage1200x696{
+#homeMainImage1200x696{
     width: 100%;
     display: none;
 }
 
-#mainImage1500x870{
+#homeMainImage1500x870{
     width: 100%;    
     display: none;
 }
@@ -147,11 +140,11 @@ main{
 
 
 @media (min-width: 768px){
-    #mainImage768x446{
+    #homeMainImage768x446{
     display: none;
     }
 
-    #mainImage1200x696{
+    #homeMainImage1200x696{
         display: block;
     }
 
@@ -183,11 +176,11 @@ main{
 }
 
 @media (min-width: 1200px){
-    #mainImage1200x696{
+    #homeMainImage1200x696{
     display: none;
     }
 
-    #mainImage1500x870{
+    #homeMainImage1500x870{
         display: block;
     }
 

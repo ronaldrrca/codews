@@ -1,13 +1,26 @@
+import React from 'react';
 import './App.css';
 import { Header } from './components/Header'
-import { Main } from './components/Main';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { Contactanos } from './pages/Contactanos';
+import { Proyectos } from './pages/Proyectos';
+import { Blog } from './pages/Blog';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <Main />
-    </div>
+      <div className="App">
+        <BrowserRouter>
+          <Header/>
+          <Routes>
+            <Route path='/' element={<Home />}></Route>
+            <Route path='home' element={<Home />}></Route>
+            <Route path='blog' element={<Blog />}></Route>
+            <Route path='contactanos' element={<Contactanos />}></Route>
+            <Route path='proyectos' element={<Proyectos />}></Route>
+          </Routes>
+        </BrowserRouter>
+      </div>
   );
 }
 

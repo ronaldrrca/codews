@@ -1,15 +1,15 @@
 import React from "react";
 import '../style-sheets/dropDownMenu.css'
+import { Link } from 'react-router-dom';
 
 function DropDownMenu() {
     return(
-        <ul id="dropDownMenu">
-            <a href="https://www.google.com/?hl=es"><li className="dropDownMenu_item">Inicio</li></a>
-            <a href="https://www.google.com/?hl=es"><li className="dropDownMenu_item">Proyectos</li></a>
-            {/* <a href="https://www.google.com/?hl=es"><li className="dropDownMenu_item">Nosotros</li></a> */}
-            <a href="https://www.google.com/?hl=es"><li className="dropDownMenu_item">Blog</li></a>
-            <a href="https://www.google.com/?hl=es"><li className="dropDownMenu_item">Contáctanos</li></a>
-        </ul>
+        <nav id="dropDownMenu">
+            <Link to="/home" className="dropDownMenu_item">INICIO</Link>
+            <Link to="/proyectos" className="dropDownMenu_item">PROYECTOS</Link>
+            <Link to="/contactanos" className="dropDownMenu_item">CONTACTANOS</Link>
+            <Link to="/blog" className="dropDownMenu_item">BLOG</Link>
+        </nav>
     )
 }
 

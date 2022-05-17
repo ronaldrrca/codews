@@ -4,6 +4,7 @@ import homeIcon from '../icons/home_icon.svg'
 import '../style-sheets/header.css'
 import { DropDownMenu } from './DropDownMenu'
 
+
 function Header() {
     return(
         <header>
