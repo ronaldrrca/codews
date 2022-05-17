@@ -1,14 +1,5 @@
-#recentProjects{
-    width: 100%;
-    display: flex;
-    background-color: #1A1A1A;
-    padding: 1rem;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
 
-.project{
+.projectCard{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,18 +7,18 @@
     margin-bottom: 8rem;
 }
 
-.project_img{
+.projectCard_img{
     width: 33.8rem;
     height: 57.8rem;
     margin-bottom: 4rem;
 }
 
-.project_img:hover{
+.projectCard_img:hover{
     filter: brightness(0.5);
     transition-duration: 500ms;
 }
 
-.project h3{
+.projectCard h3{
     width: 100%;
     text-align: center;
     font-size: 1.4rem;
@@ -35,7 +26,7 @@
     font-weight: bold;
 }
 
-.project_lineDecoration{
+.projectCard_lineDecoration{
     width: 5rem;
     height: 0.1rem;
     margin-top: 2rem;
@@ -43,21 +34,21 @@
 }
 
 @media (min-width: 768px){
-    .project_img{
+    .projectCard_img{
         width: 32.7rem;
         height: 55.9rem;
     }
 }
 
 @media (min-width: 1024px){
-    .project_img{
+    .projectCard_img{
         width: 29.1rem;
         height: 49.7rem;
     }
 }
 
 @media (min-width: 1300px){
-    .project_img{
+    .projectCard_img{
         width: 38.3rem;
         height: 65.4rem;
     }

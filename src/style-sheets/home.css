@@ -137,6 +137,23 @@
     background-color: #3477ff;
 }
 
+#startRecentProjects, #startBlogs{
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#startRecentProjects{
+    background-color: #1A1A1A;
+}
+
+#startBlogs{
+    background-color: var(--green);
+}
+
 
 
 @media (min-width: 768px){

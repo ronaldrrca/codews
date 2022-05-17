@@ -5,7 +5,7 @@ import mainImage1500x870 from '../images/mainImage-1500x870.webp'
 import responsive768 from '../images/responsive-768p.webp'
 import responsive900 from '../images/responsive-900p.webp'
 import '../style-sheets/home.css'
-import { RecentProject } from '../components/RecentProject'
+import { ProjectCard } from '../components/ProjectCard'
 import home_business_it_event from '../images/home-business-it-event.webp'
 import home_construction from '../images/home-construction.webp'
 import home_hairdressing_makeup from '../images/home-hairdressing-makeup.webp'
@@ -39,13 +39,16 @@ function Home() {
                 <p id="proposal">Solicita una propuesta de desarrollo para tu negocio, sin costo y sin compromisos.</p>
             </div>
             <h2 className="start_sectionTitle">Proyectos recientes</h2>
-            <section id="recentProjects">
-                <RecentProject src={home_business_it_event} alt='pagina web de evento' projectTitle='EVENTO DE NEGOCIOS'/>
-                <RecentProject src={home_construction} alt='pagina web de construccion' projectTitle='NEGOCIO DE CONSTRUCCIÓN'/>
-                <RecentProject src={home_hairdressing_makeup} alt='pagina web de cuidado para el cabello' projectTitle='CUIDADO DEL CABELLO'/>
-                <RecentProject src={home_lawyers_attorneys} alt='pagina web de abogados' projectTitle='ABOGADOS'/>
-                <RecentProject src={home_photography_studio} alt='pagina web de estudio fotografico' projectTitle='ESTUDIO FOTOGRÁFICO'/>
-                <RecentProject src={home_ristorante} alt='pagina web de restaurante' projectTitle='RESTAURANTE'/>
+            <section id="startRecentProjects">
+                <ProjectCard src={home_business_it_event} alt='pagina web de evento' projectTitle='EVENTO DE NEGOCIOS'/>
+                <ProjectCard src={home_construction} alt='pagina web de construccion' projectTitle='NEGOCIO DE CONSTRUCCIÓN'/>
+                <ProjectCard src={home_hairdressing_makeup} alt='pagina web de cuidado para el cabello' projectTitle='CUIDADO DEL CABELLO'/>
+                <ProjectCard src={home_lawyers_attorneys} alt='pagina web de abogados' projectTitle='ABOGADOS'/>
+                <ProjectCard src={home_photography_studio} alt='pagina web de estudio fotografico' projectTitle='ESTUDIO FOTOGRÁFICO'/>
+                <ProjectCard src={home_ristorante} alt='pagina web de restaurante' projectTitle='RESTAURANTE'/>
+            </section>
+            <section id="startBlogs">
+
             </section>
             
         </main>
