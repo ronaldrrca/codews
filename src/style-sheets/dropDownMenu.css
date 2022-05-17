@@ -4,17 +4,16 @@
     align-items: center;
 }
 
-#dropDownMenu a{/*El componente Link de react-router-dom es tomado como etiqueta 'a'*/
+.dropDownMenu_item{
     display: inline-flex;
     margin-left: 5rem;
+    font-size: 1.6rem;
     text-decoration: none;
+    color: #fff;
 }
 
-.dropDownMenu_item{
-    
-    list-style: none;
-    font-size: 1.6rem;
-    color: #fff;
+.active{    
+    border-bottom: 3px solid #3477ff;
 }
 
 @media (min-width: 1200px){
