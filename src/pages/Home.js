@@ -4,8 +4,10 @@ import mainImage1200x696 from '../images/mainImage-1200x696.webp'
 import mainImage1500x870 from '../images/mainImage-1500x870.webp'
 import responsive768 from '../images/responsive-768p.webp'
 import responsive900 from '../images/responsive-900p.webp'
+import blogImg_338x225p from '../images/blog-338x225p.webp'
 import '../style-sheets/home.css'
 import { ProjectCard } from '../components/ProjectCard'
+import { BlogCard } from "../components/BlogCard";
 import home_business_it_event from '../images/home-business-it-event.webp'
 import home_construction from '../images/home-construction.webp'
 import home_hairdressing_makeup from '../images/home-hairdressing-makeup.webp'
@@ -38,7 +40,7 @@ function Home() {
                 </figure>
                 <p id="proposal">Solicita una propuesta de desarrollo para tu negocio, sin costo y sin compromisos.</p>
             </div>
-            <h2 className="start_sectionTitle">Proyectos recientes</h2>
+            <h2 className="start_sectionTitle_dark">Proyectos recientes</h2>
             <section id="startRecentProjects">
                 <ProjectCard src={home_business_it_event} alt='pagina web de evento' projectTitle='EVENTO DE NEGOCIOS'/>
                 <ProjectCard src={home_construction} alt='pagina web de construccion' projectTitle='NEGOCIO DE CONSTRUCCIÓN'/>
@@ -47,8 +49,12 @@ function Home() {
                 <ProjectCard src={home_photography_studio} alt='pagina web de estudio fotografico' projectTitle='ESTUDIO FOTOGRÁFICO'/>
                 <ProjectCard src={home_ristorante} alt='pagina web de restaurante' projectTitle='RESTAURANTE'/>
             </section>
+            <h2 className="start_sectionTitle_dark">Blogs recientes</h2>
             <section id="startBlogs">
-
+                <BlogCard src={ blogImg_338x225p } author='Nombre autor 1' date="Mayo 17, 2020" title='Título 1' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda veniam sit nesciunt exercitationem sed culpa ullam, eos facilis eum ad atque laborum accusantium fugit facere. Est, doloremque? Reprehenderit, incidunt dolor.'  />
+                <BlogCard src={ blogImg_338x225p } author='Nombre autor 2' date="Mayo 17, 2020" title='Título 2' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda veniam sit nesciunt exercitationem sed culpa ullam, eos facilis eum ad atque laborum accusantium fugit facere. Est, doloremque? Reprehenderit, incidunt dolor.'  />
+                <BlogCard src={ blogImg_338x225p } author='Nombre autor 3' date="Mayo 17, 2020" title='Título 2' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda veniam sit nesciunt exercitationem sed culpa ullam, eos facilis eum ad atque laborum accusantium fugit facere. Est, doloremque? Reprehenderit, incidunt dolor.'  />
+                <BlogCard src={ blogImg_338x225p } author='Nombre autor 4' date="Mayo 17, 2020" title='Título 2' text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda veniam sit nesciunt exercitationem sed culpa ullam, eos facilis eum ad atque laborum accusantium fugit facere. Est, doloremque? Reprehenderit, incidunt dolor.'  />
             </section>
             
         </main>

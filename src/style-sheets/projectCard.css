@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 8rem;
+    border-radius: 0.5rem;
 }
 
 .projectCard_img{

@@ -146,16 +146,11 @@
     align-items: center;
 }
 
-#startRecentProjects{
+#startRecentProjects, #startBlogs{
     background-color: #1A1A1A;
 }
 
-#startBlogs{
-    background-color: var(--green);
-}
-
-
-
+   
 @media (min-width: 768px){
     #homeMainImage768x446{
     display: none;
@@ -221,12 +216,21 @@
     }
  }
 
- .start_sectionTitle{
+ .start_sectionTitle_dark, .start_sectionTitle_white{
      width: 100%;
      margin-top: 10rem;
      text-align: center;
      padding: 2rem 0 4rem 0;
-     background-color: var(--light-black);
      font-size: 2rem;
-     color: #fff;
+     
+ }
+
+ .start_sectionTitle_dark{
+    background-color: var(--light-black);
+    color: #fff;
+ } 
+ 
+ .start_sectionTitle_white{
+    background-color: #fff;
+    color: #111;
  }
