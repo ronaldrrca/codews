@@ -5,13 +5,14 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 8rem;
-    border-radius: 0.5rem;
+    
 }
 
 .projectCard_img{
     width: 33.8rem;
     height: 57.8rem;
     margin-bottom: 4rem;
+    border-radius: 1rem;
 }
 
 .projectCard_img:hover{

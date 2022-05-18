@@ -1,0 +1,56 @@
+footer{
+    width: 100%;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: var(--dark-black);
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+#socialMediaIcons, #designDevelopment, #copyRight{
+    width: 33rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#copyRight{
+    text-align: center;
+}
+
+#copyRight span{
+    color: var(--blue);
+}
+
+
+#socialMediaIcons img{
+    width: 4.4rem;
+}
+
+@media(min-width: 1200px){
+    footer{
+        flex-direction: row;
+        height: 8rem;
+    }
+
+    #socialMediaIcons{
+        order: 3;
+    }
+
+    #designDevelopment{
+        order: 1;
+    }
+    
+    #copyRight{
+        display: block;
+        order: 2;
+    }
+
+    #socialMediaIcons img{
+        cursor: pointer;
+    }
+}
