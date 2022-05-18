@@ -1,0 +1,37 @@
+#mobileMenu{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 4.5rem;
+    right: 0;
+    background-color: var(--light-black);
+}
+
+.mobileMenu_item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding: 1rem;
+    color: #fff;
+}
+
+#mobileMenu_closeIcon_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    padding: 1rem;
+}
+
+#mobileMenu_closeIcon{
+    width: 2.5rem;
+}
+
+.activeMobile{
+    background-color: var(--blue);
+}
+
+
