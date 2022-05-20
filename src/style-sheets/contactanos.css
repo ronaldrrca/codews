@@ -5,8 +5,8 @@
     align-items: center;
     padding: 2rem 2rem;
     margin: 3rem 0;
-    background-image: url('../images//background-contact-v.jpg');
-    background-attachment: fixed;
+    background-image: url('../images//background-contact-v.webp');
+    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -112,7 +112,7 @@ input[type='submit']:hover{
 @media(min-width: 768px){
     #contactWrapContainer{
         flex-direction: row;
-        background-image: url('../images//background-contact-h.jpg');
+        background-image: url('../images//background-contact-h.webp');
     }
 
     #contactInfo{

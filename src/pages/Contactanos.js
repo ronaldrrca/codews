@@ -1,7 +1,12 @@
 import React from "react";
 import '../style-sheets/contactanos.css'
 
+
+
 function Contactanos() {
+    
+    
+
     return(
          <main>
             <h1 className="pageTitle">Contáctanos</h1>
@@ -17,24 +22,23 @@ function Contactanos() {
                     <p id="noCost">Sin costo ni compromisos</p>
                     <p id="conditions">(Aplican condiciones)</p>
                 </div>
-                <form>
+                <form id='formulario'>
                     <label>Nombre*</label>
-                    <input type='text' required autoFocus></input>
+                    <input type='text' id='name' required autoFocus ></input>
                     <label>Email*</label>
-                    <input type='email' required></input>
+                    <input type='email' id="email" required></input>
                     <label>Teléfono</label>
-                    <input type='text' placeholder="Opcional"></input>
+                    <input type='text' id="phone" placeholder="Opcional"></input>
                     <label>Mensaje*</label>
-                    <textarea type='text' required placeholder="Escriba aquí su mensaje"></textarea>
+                    <textarea type='text' id="message" required placeholder="Escriba aquí su mensaje"></textarea>
                     <p id="required">* Campos requeridos</p>
-                    <input type='submit' value='Enviar'></input>
+                    <input type='submit' onSubmit={test} value='Enviar'></input>
                 </form>
-                
             </div>
-            
         </main>
-     
     )
 }
+
+
 
 export { Contactanos }
